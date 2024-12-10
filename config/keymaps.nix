@@ -17,14 +17,27 @@
     }
     {
       mode = [
-        "i"
         "n"
         "v"
+        "t"
       ];
       key = "<C-z>";
       action = "<esc>u";
       options = {
         desc = "Undo";
+        remap = true;
+      };
+    }
+    {
+      mode = [
+        "i"
+        "n"
+        "v"
+      ];
+      key = "<C-x>";
+      action = "d";
+      options = {
+        desc = "Cut";
         remap = true;
       };
     }
@@ -469,15 +482,7 @@
     }
     {
       mode = "n";
-      key = "<leader><tab>l";
-      action = "<cmd>tablast<cr>";
-      options = {
-        desc = "Last Tab";
-      };
-    }
-    {
-      mode = "n";
-      key = "<tab><Left>";
+      key = "<A-Left>";
       action = ":bp<cr>";
       options = {
         desc = "Left Buffer";
@@ -485,10 +490,43 @@
     }
     {
       mode = "n";
-      key = "<tab><Right>";
+      key = "<A-Right>";
       action = ":bn<cr>";
       options = {
         desc = "Right Buffer";
+      };
+    }
+    {
+      mode = "n";
+      key = "<tab><tab>";
+      action = "<cmd>tabnew<cr>";
+      options = {
+        desc = "New Tab";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<tab><Left>";
+      action = "<cmd>tabprevious<cr>";
+      options = {
+        desc = "Left Tab";
+      };
+    }
+    {
+      mode = "n";
+      key = "<tab><Right>";
+      action = "<cmd>tabnext<cr>";
+      options = {
+        desc = "Right Tab";
+      };
+    }
+    {
+      mode = "n";
+      key = "<tab>l";
+      action = "<cmd>tablast<cr>";
+      options = {
+        desc = "Last Tab";
       };
     }
     {

@@ -14,6 +14,11 @@
       enable = true;
       inlayHints = true;
       servers = {
+        rust_analyzer = {
+          enable = true;
+          installCargo = true;
+          installRustc = true;
+        };
         html = {
           enable = true;
         };

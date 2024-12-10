@@ -5,6 +5,32 @@
     {
       mode = [
         "n"
+        "v"
+        "t"
+      ];
+      key = "<C-c>";
+      action = "y";
+      options = {
+        desc = "Copy";
+        remap = true;
+      };
+    }
+    {
+      mode = [
+        "i"
+        "n"
+        "v"
+      ];
+      key = "<C-z>";
+      action = "<esc>u";
+      options = {
+        desc = "Undo";
+        remap = true;
+      };
+    }
+    {
+      mode = [
+        "n"
         "x"
       ];
       key = "j";
@@ -52,7 +78,7 @@
     }
     {
       mode = "n";
-      key = "<C-h>";
+      key = "<C-Left>";
       action = "<C-w>h";
       options = {
         desc = "Go to Left Window";
@@ -61,7 +87,7 @@
     }
     {
       mode = "n";
-      key = "<C-j>";
+      key = "<C-Down>";
       action = "<C-w>j";
       options = {
         desc = "Go to Lower Window";
@@ -70,7 +96,7 @@
     }
     {
       mode = "n";
-      key = "<C-k>";
+      key = "<C-Up>";
       action = "<C-w>k";
       options = {
         desc = "Go to Upper Window";
@@ -79,7 +105,7 @@
     }
     {
       mode = "n";
-      key = "<C-l>";
+      key = "<C-Right>";
       action = "<C-w>l";
       options = {
         desc = "Go to Right Window";
@@ -88,7 +114,7 @@
     }
     {
       mode = "n";
-      key = "<C-Up>";
+      key = "<C-A-Up>";
       action = "<cmd>resize +2<cr>";
       options = {
         desc = "Increase Window Height";
@@ -96,7 +122,7 @@
     }
     {
       mode = "n";
-      key = "<C-Down>";
+      key = "<C-A-Down>";
       action = "<cmd>resize -2<cr>";
       options = {
         desc = "Decrease Window Height";
@@ -104,7 +130,7 @@
     }
     {
       mode = "n";
-      key = "<C-Left>";
+      key = "<C-A-Left>";
       action = "<cmd>vertical resize -2<cr>";
       options = {
         desc = "Decrease Window Width";
@@ -112,7 +138,7 @@
     }
     {
       mode = "n";
-      key = "<C-Right>";
+      key = "<C-A-Right>";
       action = "<cmd>vertical resize +2<cr>";
       options = {
         desc = "Increase Window Width";
@@ -349,7 +375,7 @@
     }
     {
       mode = "t";
-      key = "<C-h>";
+      key = "<C-Left>";
       action = "<cmd>wincmd h<cr>";
       options = {
         desc = "Go to Left Window";
@@ -357,7 +383,7 @@
     }
     {
       mode = "t";
-      key = "<C-j>";
+      key = "<C-Down>";
       action = "<cmd>wincmd j<cr>";
       options = {
         desc = "Go to Lower Window";
@@ -365,7 +391,7 @@
     }
     {
       mode = "t";
-      key = "<C-k>";
+      key = "<C-Up>";
       action = "<cmd>wincmd k<cr>";
       options = {
         desc = "Go to Upper Window";
@@ -373,7 +399,7 @@
     }
     {
       mode = "t";
-      key = "<C-l>";
+      key = "<C-Right>";
       action = "<cmd>wincmd l<cr>";
       options = {
         desc = "Go to Right Window";
@@ -451,42 +477,26 @@
     }
     {
       mode = "n";
-      key = "<leader><tab>f";
-      action = "<cmd>tabfirst<cr>";
+      key = "<tab><Left>";
+      action = ":bp<cr>";
       options = {
-        desc = "First Tab";
+        desc = "Left Buffer";
       };
     }
     {
       mode = "n";
-      key = "<leader><tab><tab>";
-      action = "<cmd>tabnew<cr>";
+      key = "<tab><Right>";
+      action = ":bn<cr>";
       options = {
-        desc = "New Tab";
+        desc = "Right Buffer";
       };
     }
     {
       mode = "n";
-      key = "<leader><tab>]";
-      action = "<cmd>tabnext<cr>";
-      options = {
-        desc = "Next Tab";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader><tab>d";
+      key = "<tab>d";
       action = "<cmd>tabclose<cr>";
       options = {
         desc = "Close Tab";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader><tab>[";
-      action = "<cmd>tabprevious<cr>";
-      options = {
-        desc = "Previous Tab";
       };
     }
   ];

@@ -62,8 +62,8 @@
             "ct"
           ]
           [
-            "󰧑 SecondBrain"
-            "edit ~/projects/personal/SecondBrain"
+            "󰧑 Obsidian"
+            "edit ~/Notes/NixVim.md"
             "sb"
           ]
         ];

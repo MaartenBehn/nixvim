@@ -57,11 +57,6 @@
             "fe"
           ]
           [
-            " Copilot Chat"
-            "CopilotChat"
-            "ct"
-          ]
-          [
             "󰧑 Obsidian"
             "edit ~/Notes/NixVim.md"
             "sb"

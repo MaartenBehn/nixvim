@@ -364,6 +364,14 @@
     }
     {
       mode = "n";
+      key = "<leader>q<cr>";
+      action = "<cmd>q<cr>";
+      options = {
+        desc = "Quit this";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>qq";
       action = "<cmd>qa<cr>";
       options = {

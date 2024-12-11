@@ -53,5 +53,12 @@ _: {
     ./plugins/utils/toggleterm.nix
     ./plugins/utils/web-devicons.nix
     ./plugins/utils/auto-save.nix
+
+    # Debugging
+    ./plugins/debug/debugger.nix
+
+    # Rust
+    ./plugins/rust/debugger.nix
+    ./plugins/rust/lsp.nix
   ];
 }

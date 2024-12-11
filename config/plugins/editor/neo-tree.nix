@@ -14,6 +14,9 @@
       followCurrentFile = {
         enabled = true;
       };
+      filteredItems = {
+        visible = true;
+      };
     };
 
     defaultComponentConfigs = {

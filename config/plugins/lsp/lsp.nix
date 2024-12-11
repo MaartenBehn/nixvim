@@ -19,6 +19,9 @@
           installCargo = true;
           installRustc = true;
         };
+        glsl_analyzer = {
+          enable = true;
+        };
         html = {
           enable = true;
         };

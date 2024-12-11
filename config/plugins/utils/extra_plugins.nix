@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
-  extraPlugins = with pkgs.vimPlugins; [
-    vim-glsl
-  ];
+  extraPlugins =
+    with pkgs.vimPlugins;
+    [
+    ];
 }

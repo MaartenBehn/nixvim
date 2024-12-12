@@ -34,6 +34,28 @@
         };
       };
     };
-
   };
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>ca";
+      action = "<cmd>:RustLsp codeAction<cr>";
+      options = {
+        desc = "Rust Code Action";
+      };
+    }
+    {
+      ## Intellij Shortcut
+      mode = [
+        "n"
+        "i"
+      ];
+      key = "<A-cr>";
+      action = "<cmd>:RustLsp codeAction<cr>";
+      options = {
+        desc = "Rust Code Action";
+      };
+    }
+  ];
 }

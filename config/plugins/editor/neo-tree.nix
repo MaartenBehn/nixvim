@@ -31,13 +31,13 @@
         symbols = {
           added = " ";
           conflict = "󰩌 ";
-          deleted = "󱂥";
+          deleted = "󱂥 ";
           ignored = " ";
           modified = " ";
-          renamed = "󰑕";
+          renamed = "󰑕 ";
           staged = "󰩍";
           unstaged = "";
-          untracked = " ";
+          untracked = "";
         };
       };
     };

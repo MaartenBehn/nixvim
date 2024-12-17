@@ -1,3 +1,4 @@
+{ ... }:
 {
   colorschemes = {
     catppuccin = {
@@ -64,4 +65,14 @@
       };
     };
   };
+  extraConfigLua = ''
+    vim.diagnostic.config({
+      underline = {
+        severity = { max = vim.diagnostic.severity.INFO }
+      },
+      virtual_text = {
+        severity = { min = vim.diagnostic.severity.ERROR }
+      }
+    })
+  '';
 }

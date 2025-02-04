@@ -2,10 +2,10 @@
 {
   plugins = {
     lsp-lines = {
-      enable = true;
+      enable = false;
     };
     lsp-format = {
-      enable = true;
+      enable = false;
     };
     helm = {
       enable = true;
@@ -73,8 +73,10 @@
                   "http://json.schemastore.org/ansible-playbook" = "*play*.{yml,yaml}";
                   "http://json.schemastore.org/chart" = "Chart.{yml,yaml}";
                   "https://json.schemastore.org/dependabot-v2" = ".github/dependabot.{yml,yaml}";
-                  "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json" = "*docker-compose*.{yml,yaml}";
-                  "https://raw.githubusercontent.com/argoproj/argo-workflows/master/api/jsonschema/schema.json" = "*flow*.{yml,yaml}";
+                  "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json" =
+                    "*docker-compose*.{yml,yaml}";
+                  "https://raw.githubusercontent.com/argoproj/argo-workflows/master/api/jsonschema/schema.json" =
+                    "*flow*.{yml,yaml}";
                 };
               };
             };
@@ -105,7 +107,11 @@
             action = "type_definition";
             desc = "Type Definition";
           };
-          K = {
+          "<leader>ch" = {
+            action = "hover";
+            desc = "Hover";
+          };
+          "K" = {
             action = "hover";
             desc = "Hover";
           };
@@ -128,11 +134,11 @@
             action = "open_float";
             desc = "Line Diagnostics";
           };
-          "[d" = {
+          "<leader>cn" = {
             action = "goto_next";
             desc = "Next Diagnostic";
           };
-          "]d" = {
+          "<leader>cp" = {
             action = "goto_prev";
             desc = "Previous Diagnostic";
           };

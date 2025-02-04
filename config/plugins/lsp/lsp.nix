@@ -5,7 +5,7 @@
       enable = false;
     };
     lsp-format = {
-      enable = false;
+      enable = true;
     };
     helm = {
       enable = true;
@@ -82,66 +82,68 @@
         };
       };
 
-      keymaps = {
-        silent = true;
-        lspBuf = {
-          gd = {
-            action = "definition";
-            desc = "Goto Definition";
-          };
-          gr = {
-            action = "references";
-            desc = "Goto References";
-          };
-          gD = {
-            action = "declaration";
-            desc = "Goto Declaration";
-          };
-          gI = {
-            action = "implementation";
-            desc = "Goto Implementation";
-          };
-          gT = {
-            action = "type_definition";
-            desc = "Type Definition";
-          };
-          "<leader>ch" = {
-            action = "hover";
-            desc = "Hover";
-          };
-          "K" = {
-            action = "hover";
-            desc = "Hover";
-          };
-          "<leader>cw" = {
-            action = "workspace_symbol";
-            desc = "Workspace Symbol";
-          };
-          "<leader>cr" = {
-            action = "rename";
-            desc = "Rename";
-          };
-          "<leader>ca" = {
-            action = "code_action";
-            desc = "Code action";
-          };
+      /*
+        keymaps = {
+          silent = true;
+          lspBuf = {
+            gd = {
+              action = "definition";
+              desc = "Goto Definition";
+            };
+            gr = {
+              action = "references";
+              desc = "Goto References";
+            };
+            gD = {
+              action = "declaration";
+              desc = "Goto Declaration";
+            };
+            gI = {
+              action = "implementation";
+              desc = "Goto Implementation";
+            };
+            gT = {
+              action = "type_definition";
+              desc = "Type Definition";
+            };
+            "<leader>ch" = {
+              action = "hover";
+              desc = "Hover";
+            };
+            "K" = {
+              action = "hover";
+              desc = "Hover";
+            };
+            "<leader>cw" = {
+              action = "workspace_symbol";
+              desc = "Workspace Symbol";
+            };
+            "<leader>cr" = {
+              action = "rename";
+              desc = "Rename";
+            };
+            "<leader>ca" = {
+              action = "code_action";
+              desc = "Code action";
+            };
 
+          };
+          diagnostic = {
+            "<leader>cd" = {
+              action = "open_float";
+              desc = "Line Diagnostics";
+            };
+            "<leader>cn" = {
+              action = "goto_next";
+              desc = "Next Diagnostic";
+            };
+            "<leader>cp" = {
+              action = "goto_prev";
+              desc = "Previous Diagnostic";
+            };
+          };
         };
-        diagnostic = {
-          "<leader>cd" = {
-            action = "open_float";
-            desc = "Line Diagnostics";
-          };
-          "<leader>cn" = {
-            action = "goto_next";
-            desc = "Next Diagnostic";
-          };
-          "<leader>cp" = {
-            action = "goto_prev";
-            desc = "Previous Diagnostic";
-          };
-        };
-      };
+      */
     };
   };
   extraPlugins = with pkgs.vimPlugins; [
@@ -162,13 +164,6 @@
         border = _border
       }
     )
-
-    vim.lsp.handlers["textDocument/code_action"] = vim.lsp.with(
-      vim.lsp.handlers.hover, {
-        border = _border
-      }
-    )
-
     vim.diagnostic.config{
       float={border=_border}
     };

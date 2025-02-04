@@ -306,41 +306,10 @@
         desc = "Prev Search Result";
       };
     }
+
     {
       mode = "n";
-      key = "<leader>cd";
-      action = "vim.diagnostic.open_float";
-      options = {
-        desc = "Line Diagnostics";
-      };
-    }
-    {
-      mode = "n";
-      key = "]d";
-      action = "diagnostic_goto(true)";
-      options = {
-        desc = "Next Diagnostic";
-      };
-    }
-    {
-      mode = "n";
-      key = "[d";
-      action = "diagnostic_goto(false)";
-      options = {
-        desc = "Prev Diagnostic";
-      };
-    }
-    {
-      mode = "n";
-      key = "]e";
-      action = "diagnostic_goto(true 'ERROR')";
-      options = {
-        desc = "Next Error";
-      };
-    }
-    {
-      mode = "n";
-      key = "[e";
+      key = "öe";
       action = "diagnostic_goto(false 'ERROR')";
       options = {
         desc = "Prev Error";
@@ -348,7 +317,7 @@
     }
     {
       mode = "n";
-      key = "]w";
+      key = "äw";
       action = "diagnostic_goto(true 'WARN')";
       options = {
         desc = "Next Warning";
@@ -362,6 +331,7 @@
         desc = "Prev Warning";
       };
     }
+
     {
       mode = "n";
       key = "<leader>q<cr>";

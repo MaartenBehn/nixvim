@@ -36,6 +36,7 @@ _: {
     ./plugins/lsp/lsp.nix
     ./plugins/lsp/conform.nix
     ./plugins/lsp/fidget.nix
+    ./plugins/lsp/rust.nix
 
     # Git
     ./plugins/git/lazygit.nix
@@ -54,9 +55,6 @@ _: {
 
     # Debugging
     ./plugins/debug/debugger.nix
-
-    # Rust
-    ./plugins/rust/debugger.nix
-    ./plugins/rust/lsp.nix
+    ./plugins/debug/rust.nix
   ];
 }

@@ -37,14 +37,14 @@
   };
 
   keymaps = [
-    {
-      mode = "n";
-      key = "<leader>ca";
-      action = "<cmd>:RustLsp codeAction<cr>";
-      options = {
-        desc = "Rust Code Action";
-      };
-    }
+    #{
+    #  mode = "n";
+    #  key = "<leader>ca";
+    #  action = "<cmd>:RustLsp codeAction<cr>";
+    #  options = {
+    #    desc = "Rust Code Action";
+    #  };
+    #}
     {
       ## Intellij Shortcut
       mode = [

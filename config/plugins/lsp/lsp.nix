@@ -14,6 +14,9 @@
       enable = true;
       inlayHints = true;
       servers = {
+        clangd = {
+          enable = true;
+        };
         glsl_analyzer = {
           enable = true;
         };

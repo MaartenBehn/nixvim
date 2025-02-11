@@ -7,55 +7,57 @@ _: {
     ./file_types.nix
 
     # Themes
-    ./plugins/themes
+    ./themes
 
     # Completion
-    ./plugins/cmp/cmp.nix
-    ./plugins/cmp/lspkind.nix
-    ./plugins/cmp/autopairs.nix
-    ./plugins/cmp/schemastore.nix
+    ./cmp/cmp.nix
+    ./cmp/lspkind.nix
+    ./cmp/autopairs.nix
+    ./cmp/schemastore.nix
 
     # Snippets
-    ./plugins/snippets/luasnip.nix
+    ./snippets/luasnip.nix
 
     # Editor plugins and configurations
-    ./plugins/editor/neo-tree.nix
-    ./plugins/editor/treesitter.nix
-    ./plugins/editor/undotree.nix
-    ./plugins/editor/illuminate.nix
-    ./plugins/editor/indent-blankline.nix
-    ./plugins/editor/todo-comments.nix
-    ./plugins/editor/navic.nix
+    ./editor/neo-tree.nix
+    ./editor/treesitter.nix
+    ./editor/undotree.nix
+    ./editor/illuminate.nix
+    ./editor/indent-blankline.nix
+    ./editor/todo-comments.nix
+    ./editor/navic.nix
 
     # UI plugins
-    ./plugins/ui/bufferline.nix
-    ./plugins/ui/lualine.nix
-    ./plugins/ui/startup.nix
+    ./ui/bufferline.nix
+    ./ui/lualine.nix
+    ./ui/startup.nix
+    ./ui/keymaps.nix
 
     # LSP and formatting
-    ./plugins/lsp/lsp.nix
-    ./plugins/lsp/lspsaga.nix
-    ./plugins/lsp/conform.nix
-    ./plugins/lsp/fidget.nix
-    ./plugins/lsp/rust.nix
+    ./lsp/lsp.nix
+    ./lsp/lspsaga.nix
+    ./lsp/conform.nix
+    ./lsp/fidget.nix
+    ./lsp/rust.nix
+    ./lsp/keymaps.nix
 
     # Git
-    ./plugins/git/lazygit.nix
-    ./plugins/git/gitsigns.nix
+    ./git/lazygit.nix
+    ./git/gitsigns.nix
 
     # Utils
-    ./plugins/utils/telescope.nix
-    ./plugins/utils/whichkey.nix
-    ./plugins/utils/extra_plugins.nix
-    ./plugins/utils/mini.nix
-    ./plugins/utils/markdown-preview.nix
-    ./plugins/utils/obsidian.nix
-    ./plugins/utils/toggleterm.nix
-    ./plugins/utils/web-devicons.nix
-    ./plugins/utils/auto-save.nix
+    ./utils/telescope.nix
+    ./utils/whichkey.nix
+    ./utils/extra_plugins.nix
+    ./utils/mini.nix
+    ./utils/markdown-preview.nix
+    ./utils/obsidian.nix
+    ./utils/toggleterm.nix
+    ./utils/web-devicons.nix
+    ./utils/auto-save.nix
 
     # Debugging
-    ./plugins/debug/debugger.nix
-    ./plugins/debug/rust.nix
+    ./debug/debugger.nix
+    ./debug/rust.nix
   ];
 }

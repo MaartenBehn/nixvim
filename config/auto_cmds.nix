@@ -4,6 +4,9 @@
     vim_enter = { };
     indentscope = { };
     restore_cursor = { };
+    set_indent = {
+      clear = true;
+    };
   };
 
   autoCmd = [
@@ -70,6 +73,14 @@
           end
         '';
       };
+    }
+    {
+      group = "set_indent";
+      event = [ "Filetype" ];
+      pattern = [
+        "glsl"
+      ];
+      command = "setlocal shiftwidth=4 tabstop=4";
     }
   ];
 }

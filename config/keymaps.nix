@@ -88,7 +88,7 @@
         expr = true;
         silent = true;
       };
-    } 
+    }
     {
       mode = "n";
       key = "<A-j>";
@@ -165,8 +165,7 @@
         desc = "Save File";
       };
     }
-    
-   
+
     {
       mode = "n";
       key = "<leader>ui";
@@ -174,6 +173,6 @@
       options = {
         desc = "Inspect Pos";
       };
-    } 
+    }
   ];
 }

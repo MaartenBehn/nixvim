@@ -41,8 +41,9 @@ _: {
             enabled = true;
             indentscope_color = "rosewater";
           };
+          lsp_saga = true;
           native_lsp = {
-            enabled = true;
+            enabled = false;
             inlay_hints = {
               background = true;
             };
@@ -66,12 +67,9 @@ _: {
   };
   extraConfigLua = ''
     vim.diagnostic.config({
-      underline = {
-        severity = { max = vim.diagnostic.severity.INFO }
-      },
-      virtual_text = {
-        severity = { min = vim.diagnostic.severity.ERROR }
-      }
+      underline = false,
+      virtual_text = false,
+      virtual_lines = { only_current_line = true },
     })
   '';
 }

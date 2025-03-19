@@ -2,7 +2,7 @@
 {
   plugins = {
     lsp-lines = {
-      enable = false;
+      enable = true;
     };
     lsp-format = {
       enable = false;

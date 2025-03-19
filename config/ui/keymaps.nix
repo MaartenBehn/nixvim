@@ -1,6 +1,5 @@
-{ ... }:
 {
-  keymaps = [ 
+  keymaps = [
     {
       mode = "n";
       key = "<C-Left>";
@@ -143,8 +142,6 @@
         desc = "Prev Search Result";
       };
     }
-
-    
 
     {
       mode = "n";

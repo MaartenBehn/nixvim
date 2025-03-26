@@ -83,7 +83,7 @@
         eob = " ";
       };
 
-      updatetime = 1000;
+      updatetime = 500;
     };
   };
 

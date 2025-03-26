@@ -3,6 +3,7 @@
     ./ui/lualine.nix
     ./ui/theme.nix
     ./ui/lsp_errors.nix
+    ./ui/tiny-inline-diagnosric.nix
     ./ui/lsp_hints.nix
     #./ui/navic.nix
     ./ui/settings.nix

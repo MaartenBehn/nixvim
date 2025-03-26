@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   colorschemes = {
     catppuccin = {
       settings.integrations = {
@@ -47,12 +47,12 @@
       pattern = "tagbar,nerdtree";
       command = "setlocal signcolumn=no";
     }
-    {
-      group = "showdiagnostic";
-      event = [ "CursorHold" ];
-      pattern = "*";
-      command = "lua vim.diagnostic.open_float(nil, { focusable = false })";
-    }
+    #{
+    #  group = "showdiagnostic";
+    #  event = [ "CursorHold" ];
+    #  pattern = "*";
+    #  command = "lua vim.diagnostic.open_float(nil, { focusable = false })";
+    #}
   ];
  
   extraConfigLua = ''
@@ -87,4 +87,5 @@
       border = _border
     }
   '';
-}
+
+  }

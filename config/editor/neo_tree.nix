@@ -49,7 +49,7 @@
       key = "<leader>e";
       action = "<cmd>Neotree toggle<cr>";
       options = {
-        desc = "Toggle Neotree";
+        desc = "Neotree";
       };
     }
   ];

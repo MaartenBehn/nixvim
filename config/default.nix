@@ -4,11 +4,13 @@
     ./ui/theme.nix
     ./ui/lsp_errors.nix
     ./ui/tiny-inline-diagnosric.nix
+    #./ui/diagnostic_float.nix
     ./ui/lsp_hints.nix
     #./ui/navic.nix
     ./ui/settings.nix
     ./ui/ident.nix
     ./ui/web_dev_icons.nix
+    ./ui/startup.nix
 
     ./lsp/lspsaga.nix
     ./lsp/trouble.nix
@@ -26,9 +28,17 @@
     ./editor/auto_save.nix
     ./editor/keymaps.nix
     ./editor/treesitter.nix
+    ./editor/illuminate.nix
+    ./editor/todo_comments.nix
+    ./editor/undo_tree.nix
+    ./editor/markdown_preview.nix
 
     ./cmp/cmp.nix
     ./cmp/auto_pairs.nix
     ./cmp/lspkind.nix
+    ./cmp/luasnip.nix
+    
+    ./debug/degugger.nix
+    ./debug/rust.nix
   ];
 }

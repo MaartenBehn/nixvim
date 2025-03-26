@@ -59,8 +59,8 @@
       layout = "normal"; # normal or float
       winPosition = "right"; # left or right
       keys = {
-        jump = "e";
-        toggleOrJump = "<CR>";
+        jump = "<CR>";
+        toggleOrJump = "<Space>";
         quit = [
           "<Esc>"
           "q"
@@ -180,10 +180,10 @@
 
     {
       mode = "n";
-      key = "<leader>cw";
+      key = "<leader>o";
       action = "<cmd>Lspsaga outline<CR>";
       options = {
-        desc = "Outline";
+        desc = "Code Outline";
         silent = true;
       };
     }

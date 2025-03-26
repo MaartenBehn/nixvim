@@ -1,14 +1,5 @@
 {
-  config = {
-    extraConfigLuaPre =
-      # lua
-      ''
-        vim.fn.sign_define("diagnosticsignerror", { text = " ", texthl = "diagnosticerror", linehl = "", numhl = "" })
-        vim.fn.sign_define("diagnosticsignwarn", { text = " ", texthl = "diagnosticwarn", linehl = "", numhl = "" })
-        vim.fn.sign_define("diagnosticsignhint", { text = "󰌵", texthl = "diagnostichint", linehl = "", numhl = "" })
-        vim.fn.sign_define("diagnosticsigninfo", { text = " ", texthl = "diagnosticinfo", linehl = "", numhl = "" })
-      '';
-
+  config = { 
     clipboard = {
       providers.wl-copy.enable = true;
     };
@@ -18,7 +9,7 @@
       number = true;
 
       # Show relative line numbers
-      relativenumber = true;
+      relativenumber = false;
 
       # Use the system clipboard
       clipboard = "unnamedplus";
@@ -27,8 +18,8 @@
       tabstop = 2;
       softtabstop = 2;
 
-      # Show tabline always
-      showtabline = 2;
+      # Show tabline never
+      showtabline = 0;
 
       # Use spaces instead of tabs
       expandtab = true;
@@ -83,7 +74,7 @@
 
       # Open new split to the right of the current window
       splitright = true;
-
+ 
       # Hide command line unless needed
       cmdheight = 0;
 
@@ -91,6 +82,10 @@
       fillchars = {
         eob = " ";
       };
+
+      updatetime = 1000;
     };
   };
+
+
 }

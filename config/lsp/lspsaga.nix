@@ -1,4 +1,4 @@
-_: {
+{
   plugins.lspsaga = {
     enable = true;
     beacon = {
@@ -207,35 +207,7 @@ _: {
         silent = true;
       };
     }
-
-    {
-      mode = "n";
-      key = "<leader>cd";
-      action = "<cmd>Lspsaga show_line_diagnostics<CR>";
-      options = {
-        desc = "Line Diagnostics";
-        silent = true;
-      };
-    }
-
-    {
-      mode = "n";
-      key = "äd";
-      action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
-      options = {
-        desc = "Next Diagnostic";
-        silent = true;
-      };
-    }
-
-    {
-      mode = "n";
-      key = "öd";
-      action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
-      options = {
-        desc = "Previous Diagnostic";
-        silent = true;
-      };
-    }
   ];
 }
+
+

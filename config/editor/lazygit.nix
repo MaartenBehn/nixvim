@@ -11,7 +11,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>gg";
+      key = "<leader>g";
       action = "<cmd>LazyGit<CR>";
       options = {
         desc = "LazyGit (root dir)";

@@ -1,7 +1,8 @@
 {
   plugins = {
-    indent-blankline = {
+    lsp = {
       enable = true;
+      inlayHints = true;
     };
   };
 }

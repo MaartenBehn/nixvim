@@ -1,4 +1,4 @@
-_: {
+{
   colorschemes = {
     catppuccin = {
       enable = true;
@@ -18,7 +18,7 @@ _: {
         flavour = "macchiato"; # "latte", "mocha", "frappe", "macchiato" or raw lua code
         no_bold = false;
         no_italic = false;
-        no_underline = true;
+        no_underline = false;
         transparent_background = true;
         integrations = {
           cmp = true;
@@ -37,39 +37,8 @@ _: {
           treesitter = true;
           telescope.enabled = true;
           indent_blankline.enabled = true;
-          mini = {
-            enabled = true;
-            indentscope_color = "rosewater";
-          };
-          lsp_saga = true;
-          native_lsp = {
-            enabled = false;
-            inlay_hints = {
-              background = true;
-            };
-            virtual_text = {
-              errors = [ "italic" ];
-              hints = [ "italic" ];
-              information = [ "italic" ];
-              warnings = [ "italic" ];
-              ok = [ "italic" ];
-            };
-            underlines = {
-              errors = [ "underline" ];
-              hints = [ "underline" ];
-              information = [ "underline" ];
-              warnings = [ "underline" ];
-            };
-          };
         };
       };
     };
   };
-  extraConfigLua = ''
-    vim.diagnostic.config({
-      underline = false,
-      virtual_text = false,
-      virtual_lines = { only_current_line = true },
-    })
-  '';
 }

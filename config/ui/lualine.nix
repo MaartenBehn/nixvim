@@ -1,4 +1,4 @@
-_: {
+{
   plugins.lualine = {
     enable = true;
     settings = {
@@ -48,9 +48,9 @@ _: {
               hint = "󰝶 ";
             };
           }
-          {
-            __unkeyed-1 = "navic";
-          }
+          #{
+          #  __unkeyed-1 = "navic";
+          #}
         ];
         lualine_x = [
           {

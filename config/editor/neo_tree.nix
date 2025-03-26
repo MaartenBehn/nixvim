@@ -35,7 +35,7 @@
           ignored = " ";
           modified = " ";
           renamed = "󰑕 ";
-          staged = "󰩍";
+          staged = "";
           unstaged = "";
           untracked = "";
         };
@@ -49,7 +49,7 @@
       key = "<leader>e";
       action = "<cmd>Neotree toggle<cr>";
       options = {
-        desc = "Open/Close Neotree";
+        desc = "Toggle Neotree";
       };
     }
   ];

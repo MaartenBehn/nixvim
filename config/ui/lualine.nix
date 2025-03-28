@@ -22,6 +22,13 @@
             __unkeyed-1 = "mode";
             icon = "";
           }
+          {
+            __unkeyed-1 = {
+              __raw = ''
+                  require("recorder").recordingStatus
+              '';
+            };
+          }
         ];
         lualine_b = [
           {

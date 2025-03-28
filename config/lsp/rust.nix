@@ -23,6 +23,7 @@
               };
             };
             rust-analyzer = {
+              diagnostics.enable = false;
             };
           };
         };

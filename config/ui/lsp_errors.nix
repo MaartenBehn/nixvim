@@ -63,8 +63,20 @@
           [vim.diagnostic.severity.WARN] = "",
           [vim.diagnostic.severity.INFO] = "",
           [vim.diagnostic.severity.HINT] = "",
-        }
+        },
+        severity = {
+          vim.diagnostic.severity.ERROR,
+          vim.diagnostic.severity.WARN,
+          vim.diagnostic.severity.INFO,
+        },
       }, 
+      underline = {
+        severity = {
+          vim.diagnostic.severity.ERROR,
+          vim.diagnostic.severity.WARN,
+          vim.diagnostic.severity.INFO,
+        },
+      },
       virtual_text = false,
     })
     '';

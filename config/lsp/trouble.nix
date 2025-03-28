@@ -4,10 +4,10 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>d";
+      key = "<leader>t";
       action = "<cmd>Trouble diagnostics toggle focus=true<cr>";
       options = {
-        desc = "Toggle Diagnostics";
+        desc = "Trouble";
       };
     } 
   ];

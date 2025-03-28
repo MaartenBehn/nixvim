@@ -14,7 +14,7 @@
           command = "${pkgs.lldb_19}/bin/lldb-dap";
           type = "executable";
         };
-        # tools.enable_clippy = true;
+        tools.enable_clippy = false;
         server = {
           default_settings = {
             inlayHints = {

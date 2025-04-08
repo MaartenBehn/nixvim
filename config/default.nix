@@ -20,6 +20,7 @@
     ./lsp/glsl.nix
     ./lsp/nix.nix
     ./lsp/web.nix
+    ./lsp/python.nix
     
     ./editor/lazygit.nix
     ./editor/telescope.nix

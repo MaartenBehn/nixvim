@@ -21,6 +21,7 @@
     ./lsp/nix.nix
     ./lsp/web.nix
     ./lsp/python.nix
+    ./lsp/r.nix
     
     ./editor/lazygit.nix
     ./editor/telescope.nix

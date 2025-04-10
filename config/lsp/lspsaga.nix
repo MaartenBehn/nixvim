@@ -46,7 +46,6 @@
       keys = {
         exec = "<CR>";
         quit = [
-          "<C-q>"
           "<Esc>"
         ];
         select = "x";

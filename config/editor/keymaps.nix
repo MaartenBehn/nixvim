@@ -301,7 +301,6 @@
         desc = "Prev Search Result";
       };
     }
-
     {
       mode = "n";
       key = "<leader>q<cr>";
@@ -318,5 +317,5 @@
         desc = "Quit All";
       };
     }
-  ];
+  ]; 
 }

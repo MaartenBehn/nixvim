@@ -34,19 +34,27 @@
       enable = true;
       gotoNextStart = {
         "]m" = "@function.outer";
+        "öm" = "@function.outer";
         "]]" = "@class.outer";
+        "öö" = "@class.outer";
       };
       gotoNextEnd = {
         "]M" = "@function.outer";
+        "öM" = "@function.outer";
         "][" = "@class.outer";
+        "öä" = "@class.outer";
       };
       gotoPreviousStart = {
         "[m" = "@function.outer";
+        "äm" = "@function.outer";
         "[[" = "@class.outer";
+        "ää" = "@class.outer";
       };
       gotoPreviousEnd = {
         "[M" = "@function.outer";
+        "äM" = "@function.outer";
         "[]" = "@class.outer";
+        "äö" = "@class.outer";
       };
     };
     swap = {

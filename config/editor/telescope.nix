@@ -26,6 +26,12 @@
           desc = "Grep (root dir)";
         };
       };
+      "<leader>fr" = {
+        action = "resume";
+        options = {
+          desc = "Show last search";
+        };
+      };
       "<leader>ff" = {
         action = "find_files";
         options = {
@@ -33,7 +39,7 @@
         };
       };
       "<leader>ft" = {
-        action = "live_grep";
+        action = "current_buffer_fuzzy_find";
         options = {
           desc = "Find text";
         };

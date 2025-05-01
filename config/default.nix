@@ -14,7 +14,7 @@
 
     ./lsp/lspsaga.nix
     ./lsp/trouble.nix
-    ./lsp/fidget.nix
+    #./lsp/fidget.nix
     ./lsp/rust.nix
     ./lsp/cpp.nix
     ./lsp/glsl.nix
@@ -22,6 +22,7 @@
     ./lsp/web.nix
     ./lsp/python.nix
     ./lsp/r.nix
+    ./lsp/slang.nix
     
     ./editor/lazygit.nix
     ./editor/telescope.nix
@@ -35,6 +36,7 @@
     ./editor/undo_tree.nix
     ./editor/markdown_preview.nix
     ./editor/macro_recorder.nix
+    #./editor/dbee.nix
 
     ./cmp/cmp.nix
     ./cmp/auto_pairs.nix

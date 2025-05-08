@@ -14,7 +14,7 @@
 
     ./lsp/lspsaga.nix
     ./lsp/trouble.nix
-    #./lsp/fidget.nix
+    ./lsp/fidget.nix
     ./lsp/rust.nix
     ./lsp/cpp.nix
     ./lsp/glsl.nix

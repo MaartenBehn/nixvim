@@ -24,6 +24,7 @@
     ./lsp/r.nix
     ./lsp/slang.nix
     
+    #./editor/dbee.nix
     ./editor/lazygit.nix
     ./editor/telescope.nix
     ./editor/neo_tree.nix
@@ -36,7 +37,7 @@
     ./editor/undo_tree.nix
     ./editor/markdown_preview.nix
     ./editor/macro_recorder.nix
-    #./editor/dbee.nix
+    ./editor/vim-log-highlighting.nix
 
     ./cmp/cmp.nix
     ./cmp/auto_pairs.nix

@@ -9,7 +9,7 @@
       codeAction = "💡"; # Can be any symbol you want 💡
     };
     hover = {
-      openCmd = "!floorp"; # Choose your browser
+      openCmd = "!firefox"; # Choose your browser
       openLink = "gx";
     };
     diagnostic = {
@@ -207,6 +207,15 @@
       };
     }
   ];
+
+  extraConfigLua = ''
+    vim.keymap.del("n", "grn");
+    vim.keymap.del("n", "gra");
+    vim.keymap.del("n", "grr");
+    vim.keymap.del("n", "gri");
+    vim.keymap.del("x", "gra");
+    --vim.keymap.del("n", "gr0");
+  '';
 }
 
 

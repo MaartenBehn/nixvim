@@ -48,7 +48,7 @@
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
         in
-        {
+          {
           packages = {
             default = nvim;
           };

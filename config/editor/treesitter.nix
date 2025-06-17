@@ -6,9 +6,45 @@
       indent.enable = true;
       highlight.enable = true;
     };
-    folding = false;
+    folding = true;
     nixvimInjections = true;
-    grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
+    grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+      bash
+      c
+      c_sharp
+      cmake
+      cpp
+      css
+      cuda
+      dockerfile
+      dot
+      doxygen
+      fish
+      gitignore
+      glsl
+      go
+      haskell
+      haskell_persistent
+      hlsl
+      html
+      java
+      javadoc
+      javascript
+      json
+      latex
+      lua
+      make
+      markdown
+      markdown_inline
+      nix
+      r
+      rust
+      sql
+      toml
+      typescript
+      yaml
+      zig
+    ];  
   };
 
   plugins.treesitter-textobjects = {

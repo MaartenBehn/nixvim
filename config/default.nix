@@ -35,9 +35,13 @@
     ./editor/illuminate.nix
     ./editor/todo_comments.nix
     ./editor/undo_tree.nix
-    ./editor/markdown_preview.nix
     ./editor/macro_recorder.nix
     ./editor/vim-log-highlighting.nix
+    
+    # obsidian and .md
+    ./editor/obsidian.nix
+    ./editor/markdown_preview.nix
+    ./editor/image.nix
 
     ./cmp/cmp.nix
     ./cmp/auto_pairs.nix

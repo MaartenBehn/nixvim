@@ -42,7 +42,7 @@
     # obsidian and .md
     ./editor/obsidian.nix
     ./editor/markdown_preview.nix
-    ./editor/image.nix
+    #./editor/image.nix
 
     ./cmp/cmp.nix
     ./cmp/auto_pairs.nix

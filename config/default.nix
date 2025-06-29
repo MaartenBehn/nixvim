@@ -6,7 +6,7 @@
     ./ui/tiny-inline-diagnosric.nix
     #./ui/diagnostic_float.nix
     ./ui/lsp_hints.nix
-    #./ui/navic.nix
+    ./ui/navic.nix
     ./ui/settings.nix
     ./ui/ident.nix
     ./ui/web_dev_icons.nix
@@ -23,6 +23,7 @@
     ./lsp/python.nix
     ./lsp/r.nix
     ./lsp/slang.nix
+    ./lsp/c_sharp.nix
     
     #./editor/dbee.nix
     ./editor/lazygit.nix

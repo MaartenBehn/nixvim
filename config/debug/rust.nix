@@ -19,6 +19,21 @@
             '';
             };
           }
+          {
+            name = "cargo build --features $RUST_FEATURES";
+            type = "lldb";
+            request = "launch";
+            program = {
+              __raw = '' 
+                function()  
+                  return preShellTask("cargo build --features $RUST_FEATURES", function() 
+                    return "./target/x86_64-unknown-linux-gnu/debug/".. getRustPackageName() 
+                  end)  
+                end
+            '';
+            };
+          }
+
         ];
       };
       

@@ -16,9 +16,6 @@
         };
         tools.enable_clippy = false;
         server = {
-          #on_attach.__raw = ''function(client, bufnr) 
-          #  vim.cmd.RustAnalyzer { 'config', '{ server.rust-analyzer.cargo.features = { "tree64" } }' }
-          #end'';
           default_settings = {
             inlayHints = {
               lifetimeElisionHints = {
@@ -27,7 +24,6 @@
             };
             rust-analyzer = {
               diagnostics.enable = false;
-              #cargo.features = [ "tree64" ];
             };
           };
         };

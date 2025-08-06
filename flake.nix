@@ -2,7 +2,7 @@
   description = "deCort.tech NeoVim configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/release-25.05";
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixvim = {
       url = "github:nix-community/nixvim";

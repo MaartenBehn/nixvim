@@ -33,7 +33,20 @@
             '';
             };
           }
-
+          {
+            name = "cargo build --features $RUST_FEATURES --release";
+            type = "lldb";
+            request = "launch";
+            program = {
+              __raw = '' 
+                function()  
+                  return preShellTask("cargo build --features $RUST_FEATURES --release", function() 
+                    return "./target/x86_64-unknown-linux-gnu/release/".. getRustPackageName() 
+                  end)  
+                end
+            '';
+            };
+          }
         ];
       };
       

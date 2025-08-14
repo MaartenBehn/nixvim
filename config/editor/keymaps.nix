@@ -2,45 +2,17 @@
   globals.mapleader = " ";
 
   keymaps = [
+    # Paste and keep in visual
     {
       mode = [
-        "n"
-        "v"
-        "t"
-      ];
-      key = "<C-c>";
-      action = "y";
-      options = {
-        desc = "Copy";
-        remap = true;
-      };
-    }
-    {
-      mode = [
-        "n"
-        "v"
-        "t"
-      ];
-      key = "<C-z>";
-      action = "<esc>u";
-      options = {
-        desc = "Undo";
-        remap = true;
-      };
-    }
-    {
-      mode = [
-        "i"
-        "n"
         "v"
       ];
-      key = "<C-x>";
-      action = "d";
+      key = "p";
+      action = "<S-p>";
       options = {
-        desc = "Cut";
         remap = true;
       };
-    }
+    } 
     {
       mode = [
         "n"
@@ -52,7 +24,7 @@
         expr = true;
         silent = true;
       };
-    }
+    } 
     {
       mode = [
         "n"

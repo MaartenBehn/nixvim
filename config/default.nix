@@ -38,6 +38,7 @@
     ./editor/undo_tree.nix
     ./editor/macro_recorder.nix
     ./editor/vim-log-highlighting.nix
+    ./editor/unity.nix
     
     # obsidian and .md
     ./editor/obsidian.nix

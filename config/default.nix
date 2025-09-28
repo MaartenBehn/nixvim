@@ -40,7 +40,7 @@
     ./editor/vim-log-highlighting.nix
     
     # obsidian and .md
-    ./editor/obsidian.nix
+    #./editor/obsidian.nix
     ./editor/markdown_preview.nix
     #./editor/image.nix
 

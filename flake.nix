@@ -3,6 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/release-25.05";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixvim = {
       url = "github:nix-community/nixvim";
@@ -37,6 +39,7 @@
           ...
         }:
         let
+          pkgs-unstable = inputs.nixpkgs-unstable.legacyPackages.${system};
           nixvim' = nixvim.legacyPackages.${system};
           nixvimModule = {
             inherit pkgs;
@@ -44,6 +47,7 @@
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
               # inherit (inputs) foo;
+              inherit pkgs-unstable;
             };
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;

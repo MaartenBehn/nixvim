@@ -15,6 +15,7 @@
     ./lsp/lspsaga.nix
     ./lsp/trouble.nix
     ./lsp/fidget.nix
+    ./lsp/spell.nix
     ./lsp/rust.nix
     ./lsp/cpp.nix
     ./lsp/glsl.nix
@@ -39,6 +40,7 @@
     ./editor/macro_recorder.nix
     ./editor/vim-log-highlighting.nix
     ./editor/unity.nix
+    ./editor/typst_preview.nix
     
     # obsidian and .md
     #./editor/obsidian.nix

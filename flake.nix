@@ -1,5 +1,5 @@
 {
-  description = "deCort.tech NeoVim configuration";
+  description = "Stroby NeoVim configuration";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/release-25.05";

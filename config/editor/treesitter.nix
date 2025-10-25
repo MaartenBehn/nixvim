@@ -42,6 +42,7 @@
       sql
       toml
       typescript
+      typst
       yaml
       zig
     ];  

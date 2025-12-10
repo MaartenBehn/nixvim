@@ -1,5 +1,5 @@
-{ pkgs-unstable, ... }: {
-  extraPlugins = [ pkgs-unstable.vimPlugins.nvim-unity ];
+{ pkgs, ... }: {
+  extraPlugins = [ pkgs.vimPlugins.nvim-unity ];
 
   #extraConfigLua = "require('nvim-unity').setup({foo = "bar"})"
 }

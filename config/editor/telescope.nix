@@ -113,7 +113,6 @@
     };
   };
 
-
   extraConfigLua = ''
     require("telescope").setup{
       pickers = {
@@ -122,5 +121,8 @@
         }
       }
     }
+    -- Fix backound color bug: 
+    -- https://github.com/nvim-telescope/telescope.nvim/issues/2145
+    vim.api.nvim_set_hl(0, 'NormalFloat', {})
   '';
 }

@@ -33,7 +33,7 @@
       }
     )
     
-    require('lspconfig.ui.windows').default_options = {
+    vim.lsp.config.ui.windows.default_options = {
       border = _border
     }
   '';

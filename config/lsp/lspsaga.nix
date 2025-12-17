@@ -7,21 +7,21 @@
       };
       ui = {
         border = "rounded"; # One of none, single, double, rounded, solid, shadow
-        codeAction = "💡"; # Can be any symbol you want 💡
+        code_action = "💡"; # Can be any symbol you want 💡
       };
       hover = {
-        openCmd = "!firefox"; # Choose your browser
-        openLink = "gx";
+        open_cmd = "!firefox"; # Choose your browser
+        open_link = "gx";
       };
       diagnostic = {
-        borderFollow = true;
-        diagnosticOnlyCurrent = false;
-        showCodeAction = true;
+        border_follow = true;
+        diagnostic_only_current = false;
+        show_code_action = true;
       };
-      symbolInWinbar = {
+      symbol_in_winbar = {
         enable = true; # Breadcrumbs
       };
-      codeAction = {
+      code_action = {
         extendGitSigns = false;
         showServerName = true;
         onlyInCursor = true;
@@ -53,14 +53,14 @@
         };
       };
       outline = {
-        autoClose = true;
-        autoPreview = true;
-        closeAfterJump = true;
+        auto_close = true;
+        auto_preview = true;
+        close_after_jump = true;
         layout = "normal"; # normal or float
-        winPosition = "right"; # left or right
+        win_position = "right"; # left or right
         keys = {
           jump = "<CR>";
-          toggleOrJump = "<Space>";
+          toggle_or_jump = "<Space>";
           quit = [
             "<Esc>"
             "q"
@@ -68,13 +68,13 @@
 
         };
       };
-      scrollPreview = {
-        scrollDown = "<C-f>";
-        scrollUp = "<C-b>";
+      scroll_preview = {
+        scroll_down = "<C-f>";
+        scroll_up = "<C-b>";
       };
       finder = {
         keys = {
-          toggleOrOpen = "<CR>";
+          toggle_or_open = "<CR>";
           quit = [
             "<Esc>"
             "q"
@@ -218,6 +218,8 @@
     vim.keymap.del("x", "gra");
     --vim.keymap.del("n", "gr0");
   '';
+
+  colorschemes.catppuccin.settings.integrations.lsp_saga = true;
 }
 
 

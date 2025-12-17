@@ -106,4 +106,6 @@
       };
     };
   };
+
+  colorschemes.catppuccin.settings.integrations.treesitter = true;
 }

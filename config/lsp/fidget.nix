@@ -98,4 +98,9 @@
       };
     };
   };
+
+  colorschemes.catppuccin.settings.integrations = {
+    notify = true;
+    fidget = true;
+  }; 
 }

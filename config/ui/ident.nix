@@ -15,19 +15,11 @@
     };
   };
 
-  colorschemes = {
-    catppuccin = {
-      enable = true;
-      settings = {
-        integrations = {
-          mini = {
-            enabled = true;
-            indentscope_color = "rosewater";
-          };
-        };
-      };
+  colorschemes.catppuccin.settings.integrations = {
+    indent_blankline.enabled = true;
+    mini = {
+      enabled = true;
+      indentscope_color = "rosewater";
     };
-  };
-
-  
+  }; 
 }

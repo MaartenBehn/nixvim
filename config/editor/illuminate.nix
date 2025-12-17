@@ -12,4 +12,9 @@
       ];
     };
   };
+
+  colorschemes.catppuccin.settings.integrations.illuminate = {
+    enabled = true;
+    lsp = true;
+  };
 }

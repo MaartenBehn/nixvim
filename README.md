@@ -83,7 +83,6 @@ home-manager.users.<user>.home.packages = [
 ### Git
 
 - `lazygit.nix`: Configures the LazyGit plugin for Git integration.
-- `gitsigns.nix`: Configures the GitSigns plugin for displaying Git diff information.
 
 ### Utils
 

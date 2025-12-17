@@ -125,4 +125,6 @@
     -- https://github.com/nvim-telescope/telescope.nvim/issues/2145
     vim.api.nvim_set_hl(0, 'NormalFloat', {})
   '';
+
+  colorschemes.catppuccin.settings.integrations.telescope.enabled = true;
 }

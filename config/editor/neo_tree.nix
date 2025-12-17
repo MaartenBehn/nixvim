@@ -57,4 +57,6 @@
       };
     }
   ];
+
+  colorschemes.catppuccin.settings.integrations.neotree = true;
 }

@@ -22,21 +22,7 @@
         transparent_background = true;
         integrations = {
           cmp = true;
-          notify = true;
           gitsigns = true;
-          neotree = true;
-          which_key = true;
-          illuminate = {
-            enabled = true;
-            lsp = true;
-          };
-          navic = {
-            enabled = true;
-            custom_bg = "NONE";
-          };
-          treesitter = true;
-          telescope.enabled = true;
-          indent_blankline.enabled = true;
         };
       };
     };

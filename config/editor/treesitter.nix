@@ -31,6 +31,7 @@
       javadoc
       javascript
       json
+      just
       latex
       lua
       make

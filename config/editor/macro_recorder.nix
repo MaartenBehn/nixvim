@@ -23,14 +23,14 @@
         dynamicSlots = "static",
 
       mapping = {
-        startStopRecording = "q",
+        startStopRecording = "<leader>mq",
         playMacro = "Q",
-        switchSlot = "<C-q>",
-        editMacro = "cq",
-        deleteAllMacros = "dq",
-        yankMacro = "yq",
+        switchSlot = "<leader>m<C-q>",
+        editMacro = "<leader>mc",
+        deleteAllMacros = "<leader>md",
+        yankMacro = "<leader>my",
         -- ⚠️ this should be a string you don't use in insert mode during a macro
-        addBreakPoint = "##",
+        addBreakPoint = "<leader>m#",
       },
 
       -- Clears all macros-slots on startup.

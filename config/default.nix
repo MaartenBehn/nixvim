@@ -4,13 +4,13 @@
     ./ui/theme.nix
     ./ui/lsp_errors.nix
     ./ui/tiny-inline-diagnosric.nix
-    #./ui/diagnostic_float.nix
     ./ui/lsp_hints.nix
     ./ui/navic.nix
     ./ui/settings.nix
     ./ui/ident.nix
     ./ui/web_dev_icons.nix
     ./ui/startup.nix
+    ./ui/guttermarks.nix
 
     ./lsp/lspsaga.nix
     ./lsp/trouble.nix

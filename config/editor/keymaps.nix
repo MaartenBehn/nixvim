@@ -110,19 +110,28 @@
       };
     }
     {
-      mode = "i";
-      key = ";";
-      action = ";<c-g>u";
+      mode = [
+        "n"
+        "v"
+        "i"
+      ];
+      key = "<c-d>";
+      action = "<c-d>zz";
+      options = {
+        desc = "One Page down";
+      };
     }
     {
-      mode = "i";
-      key = ".";
-      action = ".<c-g>u";
-    }
-    {
-      mode = "i";
-      key = ";";
-      action = ";<c-g>u";
+      mode = [
+        "n"
+        "v"
+        "i"
+      ];
+      key = "<c-u>";
+      action = "<c-u>zz";
+      options = {
+        desc = "One Page up";
+      };
     }
     {
       mode = [
@@ -132,9 +141,9 @@
         "s"
       ];
       key = "<C-s>";
-      action = "<cmd>w<cr><esc>";
+      action = "<cmd>wa<cr><esc>";
       options = {
-        desc = "Save File";
+        desc = "Save All File";
       };
     }
 
@@ -271,6 +280,22 @@
       options = {
         expr = true;
         desc = "Prev Search Result";
+      };
+    }
+    {
+      mode = "n";
+      key = "q<cr>";
+      action = "<cmd>q<cr>";
+      options = {
+        desc = "Quit this";
+      };
+    }
+    {
+      mode = "n";
+      key = "qq";
+      action = "<cmd>qa<cr>";
+      options = {
+        desc = "Quit all";
       };
     }
     {

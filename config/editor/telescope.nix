@@ -23,7 +23,19 @@
       "<leader><space>" = {
         action = "live_grep";
         options = {
-          desc = "Grep (root dir)";
+          desc = "Grep";
+        };
+      };
+      "<leader>cc" = {
+        action = "lsp_document_symbols";
+        options = {
+          desc = "Find in file";
+        };
+      };
+      "<leader>cs" = {
+        action = "lsp_dynamic_workspace_symbols";
+        options = {
+          desc = "Find in Workspace";
         };
       };
       "<leader>fr" = {

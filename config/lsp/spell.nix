@@ -5,6 +5,7 @@
       "en"
       "de"
     ];
+    spellsuggest = "fast,5";
   };
 
   autoGroups = {

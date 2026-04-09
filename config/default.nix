@@ -41,6 +41,8 @@
     ./editor/vim-log-highlighting.nix
     ./editor/unity.nix
     ./editor/typst_preview.nix
+    ./editor/profile.nix
+    ./editor/img_clip.nix
     
     # obsidian and .md
     #./editor/obsidian.nix

@@ -284,18 +284,10 @@
     }
     {
       mode = "n";
-      key = "q<cr>";
+      key = "q";
       action = "<cmd>q<cr>";
       options = {
         desc = "Quit this";
-      };
-    }
-    {
-      mode = "n";
-      key = "qq";
-      action = "<cmd>qa<cr>";
-      options = {
-        desc = "Quit all";
       };
     }
     {
@@ -314,5 +306,22 @@
         desc = "Quit All";
       };
     }
-  ]; 
+  ];
+
+  extraConfigLuaPre = ''
+    -- Remove all keymaps starting with 'q'
+    local function remove_q_keymaps()
+      local modes = { 'n', 'v', 'x', 'o', 'i', 'c', 't', 's' }
+      for _, mode in ipairs(modes) do
+        local keymaps = vim.api.nvim_get_keymap(mode)
+        for _, keymap in ipairs(keymaps) do
+          if keymap.lhs:match('^q') then
+            pcall(vim.keymap.del, mode, keymap.lhs)
+          end
+        end
+      end
+    end
+
+    remove_q_keymaps()
+  '';
 }

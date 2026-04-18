@@ -9,6 +9,7 @@
     };
   })];
 
+
   extraConfigLua = ''
     -- default values
     require("recorder").setup {
@@ -23,9 +24,9 @@
         dynamicSlots = "static",
 
       mapping = {
-        startStopRecording = "<leader>mq",
-        playMacro = "Q",
-        switchSlot = "<leader>m<C-q>",
+        startStopRecording = "ü",
+        playMacro = "Ü",
+        switchSlot = "<C-ü>",
         editMacro = "<leader>mc",
         deleteAllMacros = "<leader>md",
         yankMacro = "<leader>my",

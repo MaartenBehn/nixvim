@@ -26,7 +26,6 @@
     ./lsp/slang.nix
     ./lsp/c_sharp.nix
     
-    #./editor/dbee.nix
     ./editor/lazygit.nix
     ./editor/telescope.nix
     ./editor/neo_tree.nix
@@ -43,13 +42,15 @@
     ./editor/typst_preview.nix
     ./editor/profile.nix
     ./editor/img_clip.nix
+    #./editor/avante.nix
     
     # obsidian and .md
     #./editor/obsidian.nix
     ./editor/markdown_preview.nix
     #./editor/image.nix
-
+    
     ./cmp/cmp.nix
+    #./cmp/cmp_ai.nix
     ./cmp/auto_pairs.nix
     ./cmp/lspkind.nix
     ./cmp/luasnip.nix

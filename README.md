@@ -1,3 +1,6 @@
+**Has been merged into my nixos config repo. Not actively used anymore.**
+
+
 # NixVim Configuration
 
 This repository contains my personal configuration NixVim, a Neovim configuration managed with Nix.
